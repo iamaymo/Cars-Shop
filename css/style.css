@@ -1,0 +1,617 @@
+/* Start Variables */
+:root {
+}
+/* End Variables */
+
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.3s ease;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Small Devices */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium Devices */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large Devices */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.heading {
+  text-align: center;
+  font-size: 4rem;
+  background: linear-gradient(to right, #e1415f, #4f48ec 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 1rem;
+  margin: 2rem 0;
+}
+/* End Global Rules */
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 5rem;
+  background: #072e33;
+  background: linear-gradient(to right, #e1415f, #4f48ec 90%);
+  padding: 0.9rem 3.5rem;
+  cursor: pointer;
+  font-size: 1.7rem;
+  color: white;
+}
+
+/* Start Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #ffffffb0;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: 0 0.5rem 1rem rgb(0, 0, 0, 0.1);
+}
+
+header .logo {
+  font-size: 3rem;
+  background: linear-gradient(to right, #e1415f, #4f48ec 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bolder;
+}
+
+header .navbar a {
+  font-size: 2rem;
+  padding: 0 1.5rem;
+  background: linear-gradient(to right, #e1415f, #4f48ec 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+header .icons a {
+  font-size: 2.5rem;
+  background: linear-gradient(to right, #e1415f, #4f48ec 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 1.5rem;
+}
+
+header .links {
+  position: relative;
+}
+
+header .links .icon {
+  transition: 0.3s;
+}
+
+header .links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #5048ec94;
+  position: absolute;
+  right: 0;
+  min-width: 200px;
+  top: 290%;
+  z-index: 1;
+  display: none;
+}
+
+header .links ul::before {
+  content: "";
+  border-width: 14px;
+  border-style: solid;
+  border-color: transparent transparent #4f48ec transparent;
+  position: absolute;
+  right: -2px;
+  top: -30px;
+}
+
+header .links:hover ul {
+  display: block;
+}
+
+header .links ul li a:hover {
+  padding-left: 25px;
+}
+
+header .links ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #e1415f;
+  transition: 0.3s;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+header .links ul li:not(:last-child) a {
+  border-bottom: 1px solid #e1415f;
+}
+header .links ul li:last-child {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 809.9px) {
+  header .links {
+    display: none;
+  }
+}
+
+@media (max-width: 810px) {
+  header .icons {
+    display: none;
+  }
+  header .navbar a {
+    display: none;
+  }
+}
+/* End Header */
+
+/* Start Home */
+.home {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background: url(../images/rahul-bhogal-0AShoaNH8gc-unsplash.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.home .content {
+  max-width: 50rem;
+}
+
+.home .content h3 {
+  font-size: 6rem;
+  background: linear-gradient(to right, #e1415f, #4f48ec 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home .content span {
+  font-size: 3.5rem;
+  background: linear-gradient(to right, #e1415f, #4f48ec 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 1rem 0;
+  line-height: 1.5;
+}
+
+.home .content p {
+  font-size: 1.6rem;
+  background: linear-gradient(to right, #e1415f, #4f48ec 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 1rem 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 633px) {
+  .home {
+    justify-content: center;
+  }
+  .home .content a {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 355px) {
+  .home .content h3 {
+    font-size: 40px;
+  }
+  .home .content span {
+    font-size: 30px;
+  }
+}
+/* End Home */
+
+/* Start About */
+.about .row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  padding-bottom: 3rem;
+}
+
+.about .row .img-container {
+  flex: 1 1 40rem;
+  position: relative;
+}
+
+.about .row .img-container img {
+  width: 100%;
+  border: 0.5rem solid #fff;
+  box-shadow: 0 0.5rem 1rem rgb(0, 0, 0, 0.1);
+  height: 100%;
+  object-fit: cover;
+}
+
+.about .row .content {
+  flex: 1 1 40rem;
+}
+
+.about .row .img-container h3 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  color: #333;
+  background: #fff;
+  width: 100%;
+  padding: 1rem 2rem;
+  text-align: center;
+  mix-blend-mode: screen;
+}
+
+.about .row .content h3 {
+  font-size: 3rem;
+  background: linear-gradient(to right, #e1415f, #4f48ec 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about .row .content p {
+  font-size: 1.6rem;
+  background: linear-gradient(to right, #e1415f, #4f48ec 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 5rem 0;
+  padding-top: 1rem;
+  line-height: 1.5;
+}
+
+.about {
+  margin-top: 3.5rem;
+}
+
+@media (max-width: 810px) {
+  .about .row .img-container {
+    display: none;
+  }
+}
+
+.icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  justify-content: center;
+}
+
+.icons-container .icons img {
+  block-size: 10rem;
+  align-content: center;
+}
+
+.icons-container .icons h3 {
+  font-size: 1.2rem;
+}
+
+.icons-container .icons {
+  background: linear-gradient(to right, #4f48ec, #e1415f 90%);
+  border: 1rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  width: 300px;
+  justify-content: center;
+}
+/* End About */
+
+/* Start Cars */
+.cars .cars-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.cars .cars-container .car {
+  flex: 1 1 30rem;
+  box-shadow: 0 0.5rem 0.5rem rgb(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  border: 0.1rem solid rgb(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.cars .cars-container .car .image {
+  position: relative;
+  text-align: center;
+  padding-top: 1rem;
+  overflow: hidden;
+}
+
+.cars .cars-container .car .image img {
+  block-size: 20rem;
+}
+
+.cars .cars-container .car:hover .image img {
+  transform: scale(1.1);
+}
+
+.cars .cars-container .car .image .icons {
+  position: absolute;
+  bottom: -7rem;
+  left: 0;
+  right: 0;
+  display: flex;
+  background: rgba(248, 248, 248, 0.359);
+  bottom: 0;
+}
+
+.cars .cars-container .car .image .icons a {
+  height: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  width: 50%;
+  background: linear-gradient(to right, #e1415f, #4f48ec 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cars .cars-container .car .image .content {
+  padding: 2rem;
+  text-align: center;
+}
+
+.cars .cars-container .car .content h3 {
+  /* padding-left: 1rem; */
+  font-size: 2rem;
+  background: linear-gradient(to right, #e1415f, #4f48ec 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.cars .cars-container .car .content .price {
+  font-size: 1.5rem;
+  background: linear-gradient(to right, #e1415f, #4f48ec 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+@media (max-width: 872px) {
+  .cars .cars-container .car .image .icons a:nth-child(2) {
+    font-size: 1.7rem;
+  }
+}
+/* End Cars */
+
+/* Start Review */
+.review .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.review .box-container .box {
+  flex: 1 1 30rem;
+  box-shadow: 0 0.5rem 1.5rem rgb(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+  position: relative;
+}
+
+.review .box-container .box .fa-quote-right {
+  position: absolute;
+  bottom: 3rem;
+  right: 3rem;
+  font-size: 6rem;
+  color: #eee;
+  z-index: -1;
+}
+
+.review .box-container .box .stars i {
+  background: linear-gradient(to right, #e1415f, #4f48ec 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2rem;
+}
+
+.review .box-container .box p {
+  color: #999;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  padding-top: 1rem;
+}
+
+.review .box-container .box .user {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.review .box-container .box .user img {
+  block-size: 60px;
+  border-radius: 150px;
+  padding-right: 2px;
+}
+
+.review .box-container .box .user h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.review .box-container .box .user span {
+  font-size: 1rem;
+  color: #333333ca;
+}
+/* End Review */
+
+/* Start Contact */
+.contact {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.contact h1 {
+  margin-bottom: 50px;
+}
+
+.contact .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.contact .row form {
+  flex: 1 1 100%;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 0.5rem 1.5rem rgb(0, 0, 0, 0.1);
+  background: #fff;
+  border-radius: 0.5rem;
+}
+
+.contact .row form .box {
+  padding: 1rem;
+  font-size: 1.7rem;
+  background: linear-gradient(to right, #e1415f, #0a0398 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: none;
+  border: 0.1rem solid rgb(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  margin: 0.7rem 0;
+  width: 100%;
+}
+
+.contact .row form .box:focus {
+  border-color: rgba(59, 50, 239, 0.737);
+}
+
+.contact .row form textarea {
+  height: 10rem;
+  resize: none;
+}
+
+.contact .row form nav {
+  display: flex;
+  justify-content: right;
+  gap: 0.5rem;
+}
+
+.contact .row form nav a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 5rem;
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+.contact .row form nav #facebook {
+  background: #0a0398;
+  color: white;
+}
+
+.contact .row form nav #linkdin {
+  background: rgb(219, 205, 205);
+  color: black;
+}
+
+.contact .row form nav #twiter {
+  background: black;
+  color: white;
+}
+
+.contact .row form nav #github {
+  background: gray;
+  color: black;
+}
+
+@media (max-width: 576px) {
+  .contact .row form {
+    padding: 1rem 1.5rem;
+  }
+
+  .contact .row form .box {
+    font-size: 1.5rem;
+  }
+
+  .contact .row form nav {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .contact .row form nav a {
+    width: 50%;
+    margin: 0.3rem 0;
+  }
+  .sendM {
+    width: 100%;
+  }
+}
+/* End Contact */
+
+footer {
+  flex: 1 1 40rem;
+  padding: 1rem;
+  box-shadow: 0 0.5rem 1.5rem rgb(0, 0, 0, 0.1);
+  background: #fffcfccb;
+  text-align: center;
+}
