@@ -1,6 +1,6 @@
 /* Start Variables */
-:root {
-}
+/* :root { 
+} */
 /* End Variables */
 
 /* Start Global Rules */
@@ -382,19 +382,23 @@ header .links ul li:last-child {
 
 .cars .cars-container .car .image img {
   block-size: 20rem;
-}
-
-.cars .cars-container .car:hover .image img {
   transform: scale(1.1);
+  border-radius: 5px;
 }
 
 .cars .cars-container .car .image .icons {
   position: absolute;
+  width: 82%;
   bottom: -7rem;
   left: 0;
   right: 0;
   display: flex;
-  background: rgba(248, 248, 248, 0.359);
+  margin-left: 35px;
+  background: rgba(248, 248, 248, 0.534);
+  margin-left: 36px;
+}
+
+.cars .cars-container .car .image:hover .icons {
   bottom: 0;
 }
 
